@@ -16,10 +16,12 @@
 }
 
 body {
-  /* 4. Add accessible line-height */
-  line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  font-family: Roboto, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* 6. Improve media defaults */
@@ -51,4 +53,65 @@ h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, footer, .hero-section {
+    background-color: #1F2937;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.header-link-text, .hero-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.left-header, .right-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    align-items: center;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-signup {
+    background-color: #3882F6;
+    color: white;
+    padding: 4px 32px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    color: #3882F6;
 }

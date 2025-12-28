@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interstellar Travel</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 <body>
     <header>
         <ul class="left-header">
-            <li><a href=""><img src="xplore-logo.png" alt="Xplore logo"></a></li>
+            <li><a class="header-logo" href="">Header logo</a></li>
         </ul>
         
         <ul class="right-header">
-            <li><a href="">Header link one</a></li>
-            <li><a href="">Header link two</a></li>
-            <li><a href="">Header link three</a></li>
+            <li><a class="header-link-text" href="">Header link one</a></li>
+            <li><a class="header-link-text" href="">Header link two</a></li>
+            <li><a class="header-link-text" href="">Header link three</a></li>
         </ul>
     </header>
 
-    <section>
-        <div>
-            <h1>This website is awesome</h1>
-            <h3>This website has some subtext that goes here under the main title. It's a smaller font nad the color is lower contrast</h3>
-            <button>Sign up</button>
+    <section class="hero-section">
+        <div class="hero-left">
+            <h1 class="hero-main-text">This website is<br> awesome</h1>
+            <p class="hero-secondary-text">This website has some subtext that goes here under the<br> main title. It's a smaller font nad the color is lower<br> contrast</p>
+            <button class="hero-signup">Sign up</button>
         </div>
-        <div>
-            <img src="https://placecats.com/300/200" alt="this is a placeholder for an image">
+        <div class="hero-right">
+            <img src="https://placecats.com/600/250" alt="this is a placeholder for an image">
         </div>
     </section>
 
